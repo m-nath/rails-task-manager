@@ -1,8 +1,9 @@
 <h1><%= @task.title %></h1>
 
 <h2><%= @task.details %></h2>
-<%= label :completed %>
+Completed
 <%= check_box :completed, :as => :boolean, checked:false %>
+<br>
 <%= link_to tasks_path do %>
   Back to the List
 <% end %>
