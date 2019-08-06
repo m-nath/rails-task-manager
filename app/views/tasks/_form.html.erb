@@ -2,12 +2,13 @@
 <!-- app/views/tasks/_form.html.erb -->
 <%= form_for(task) do |f| %>
 <%= f.label :title %>
-<%= f.text_field :title %>
+<%= f.text_field :title, class: 'form-control' %>
 <br>
 <%= f.label :details %>
-<%= f.text_field :details %>
+<%= f.text_field :details, class: 'form-control' %>
 <br>
-<%= f.check_box :completed, :as => :boolean, checked:false %> Completed<br>
+<%= f.label :completed %>
+<%= f.check_box :completed, class: 'form-control' :as => :boolean, checked:false %> Completed<br>
 <%= f.submit %>
 <% end %>
 
